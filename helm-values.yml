@@ -1,0 +1,19 @@
+component:
+  name: user
+  version: 4.0.0
+configMap:
+  create: yes
+  name: user
+  data:
+    MONGO: "true"
+    MONGO_URL: "mongodb://mongodb:27017/users"
+    REDIS_HOST: redis
+service:
+  containerPort: 8080
+resources:
+  limits:
+    cpu: 350m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
