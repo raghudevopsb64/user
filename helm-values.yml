@@ -7,7 +7,7 @@ configMap:
   data:
     MONGO: "true"
     MONGO_URL: "mongodb://mongodb:27017/users"
-    REDIS_HOST: redis
+    REDIS_HOST: redis-master
 service:
   containerPort: 8080
 resources:
